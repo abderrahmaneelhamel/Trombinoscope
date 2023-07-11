@@ -33,10 +33,10 @@ import AuthenticatedLayout from '@/layouts/AuthenticatedLayout.vue'
                 <div class="filters">
                     <span class="filter" v-bind:class="{ active: currentFilter === 'ALL'  ,  'bg-indigo-300': currentFilter === 'ALL'}" v-on:click="setFilter('ALL')">ALL</span>
                     <span class="filter " v-bind:class="{ active: currentFilter === 'DOSI' ,  'bg-indigo-300': currentFilter === 'DOSI' }" v-on:click="setFilter('DOSI')">DOSI</span>
-                    <span class="filter" v-bind:class="{ active: currentFilter === 'CDO'  ,  'bg-indigo-300': currentFilter === 'CDO'}" v-on:click="setFilter('CDO')">CDO</span>
-                    <span class="filter" v-bind:class="{ active: currentFilter === 'DF'  ,  'bg-indigo-300': currentFilter === 'DF'}" v-on:click="setFilter('DF')">DIGITAL FACTORY</span>
-                    <span class="filter" v-bind:class="{ active: currentFilter === 'SECURITE'  ,  'bg-indigo-300': currentFilter === 'SECURITE'}" v-on:click="setFilter('SECURITE')">SECURITE SI</span>
-                    <span class="filter" v-bind:class="{ active: currentFilter === 'PROGSI'  ,  'bg-indigo-300': currentFilter === 'PROGSI'}" v-on:click="setFilter('PROGSI')">PROGRAMMES SI</span>
+                    <span class="filter" v-bind:class="{ active: currentFilter === 'CDO'  ,  'bg-purple-300': currentFilter === 'CDO'}" v-on:click="setFilter('CDO')">CDO</span>
+                    <span class="filter" v-bind:class="{ active: currentFilter === 'DF'  ,  'bg-red-300': currentFilter === 'DF'}" v-on:click="setFilter('DF')">DIGITAL FACTORY</span>
+                    <span class="filter" v-bind:class="{ active: currentFilter === 'SECURITE'  ,  'bg-orange-300': currentFilter === 'SECURITE'}" v-on:click="setFilter('SECURITE')">SECURITE SI</span>
+                    <span class="filter" v-bind:class="{ active: currentFilter === 'PROGSI'  ,  'bg-yellow-200': currentFilter === 'PROGSI'}" v-on:click="setFilter('PROGSI')">PROGRAMMES SI</span>
                 </div>
             </div>
         </div>
