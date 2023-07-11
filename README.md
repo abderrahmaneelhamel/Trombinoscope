@@ -18,6 +18,7 @@ cd trombinoscope_backend
 # Install Breeze and dependencies...
 composer install
 
+#copy .env.example to .env
 cp .env.example .env
 
 ```
@@ -41,7 +42,7 @@ cd trombinoscope_frontend
 
 Finally, run the application via `npm run dev`. The application will be available at `http://localhost:3000`:
 
-```
+```bash
 
 npm run dev
 
