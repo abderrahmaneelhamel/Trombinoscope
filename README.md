@@ -38,7 +38,6 @@ cd trombinoscope_frontend
 
 ```
 
-```
 
 Finally, run the application via `npm run dev`. The application will be available at `http://localhost:3000`:
 
