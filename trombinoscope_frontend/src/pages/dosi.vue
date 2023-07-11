@@ -91,6 +91,15 @@ export default {
             case 'm2':
                 return 'chef departement'
                 break;
+            case 'm3':
+                return 'chef departement'
+                break;
+            case 'm4':
+                return 'chef departement'
+                break;
+            case 'm5':
+                return 'chef departement'
+                break;    
             default:
                 return layer;
                 break;
