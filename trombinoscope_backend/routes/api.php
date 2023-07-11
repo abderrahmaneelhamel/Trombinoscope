@@ -23,6 +23,9 @@ Route::middleware(['auth:sanctum'])->get('/users', function (Request $request) {
 });
 Route::middleware(['auth:sanctum'])->post('/user/update', [App\Http\Controllers\ProfileController::class, 'update']);
 
+Route::middleware(['auth:sanctum'])->post('/user/create', [App\Http\Controllers\ProfileController::class, 'store']);
+
+
 Route::middleware(['auth:sanctum'])->post('/page', function (Request $request) {
     return User::where('pole' , $request->pole)->get()->toJson();
 });

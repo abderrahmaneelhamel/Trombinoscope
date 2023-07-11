@@ -21,10 +21,13 @@ class User extends Authenticatable
         'name',
         'last_name',
         'poste',
+        'pole',
         'direction',
         'number',
         'email',
+        'superiority',
         'password',
+        'image',
     ];
 
     /**

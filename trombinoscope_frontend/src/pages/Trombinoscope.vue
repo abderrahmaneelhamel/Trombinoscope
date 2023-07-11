@@ -47,7 +47,7 @@ import AuthenticatedLayout from '@/layouts/AuthenticatedLayout.vue'
             <div v-for="user in this.filteredUsers" :key="user.id">
             <div v-if="currentFilter === user.pole || currentFilter === 'ALL'" class="w-64 bg-white shadow-lg rounded-lg overflow-hidden my-4 mx-3" >
                     <img class="w-full h-56 object-cover object-center" :src="'../../'+user.image" alt="avatar">
-                    <div :class="{'flex items-center px-6 py-3' : true , 'bg-red-500' : user.pole === 'DF' , 'bg-green-500' : user.pole === 'CDO' , 'bg-purple-500' : user.pole === 'SECURITE' , 'bg-orange-500' : user.pole === 'PROGSI' , 'bg-indigo-500' : true }">
+                    <div :class="{'flex items-center px-6 py-3' : true , 'bg-red-500' : user.pole === 'DF' , 'bg-yellow-500' : user.pole === 'PROGSI' , 'bg-purple-500' : user.pole === 'CDO' , 'bg-orange-500' : user.pole === 'SECURITE' , 'bg-indigo-500' : true }">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-briefcase-fill" viewBox="0 0 16 16"> <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/> <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/> </svg>
                         <h1 class="mx-3 text-white font-semibold text-lg">{{ user.pole }}</h1>
                     </div>

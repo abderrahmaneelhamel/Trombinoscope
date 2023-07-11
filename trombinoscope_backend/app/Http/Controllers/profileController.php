@@ -18,6 +18,41 @@ class ProfileController extends Controller
     /**
      * Display the user's profile form.
      */
+
+     public function store(Request $request)
+     {
+         $this->validate($request, [
+             'name' => 'required',
+             'last_name' => 'required',
+             'pole' => 'required',
+             'poste' => 'required',
+             'direction' => 'required',
+             'number' => 'required',
+             'email' => 'required',
+             'image' => 'required',
+             'superiority' => 'required',
+         ]);
+         try {         
+                $user = User::create([
+                    'name' =>  $request->name,
+                    'last_name' =>  $request->last_name,
+                    'poste' => $request->poste,
+                    'direction' => $request->direction,
+                    'pole' => $request->pole,
+                    'email' => $request->email,
+                    'number' => $request->number,
+                    'image' => $request->image,
+                    'superiority' => $request->superiority,
+                    'password' => Hash::make('password')
+                ]);
+        } catch (\Throwable $th) {
+            return [
+                'error' => $th
+            ];
+         }
+ 
+         return $user->toJson();
+     } 
     public function update(Request $request)
     {
         $this->validate($request, [

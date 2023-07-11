@@ -121,27 +121,3 @@ import axios from '../lib/axios';
         }
     }
     </script>
-    <!-- <script setup>
-    import { useUsers } from '@/stores/user'
-    import { computed, ref } from 'vue'
-    
-    const store = useUsers()
-    
-    const form = ref({
-        name: '',
-        email: '',
-        password: '',
-        password_confirmation: '',
-        terms: false,
-    })
-    
-    const processing = ref(false)
-    
-    const setErrors = ref()
-    
-    const errors = computed(() => setErrors.value)
-    
-    const submitRegister = () => {
-        store.register(form, setErrors, processing)
-    }
-    </script> -->
